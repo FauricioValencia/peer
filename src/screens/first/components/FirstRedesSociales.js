@@ -3,25 +3,21 @@
  * https://github.com/facebook/react-native
  * @flow
  */
-
 import React, { Component } from 'react';
 import {
-  Platform,
   StyleSheet,
   Text,
   View,
-  ScrollView
 } from 'react-native';
-import RegistryComponent from '../components/Registry';
 
-export default class Registry extends Component {
-  constructor(props){
+export default class FirstRedesSociales extends Component {
+  constructor(props) {
     super(props);
   }
   render() {
     return (
       <View style={styles.container}>
-        <RegistryComponent/>
+        <Text> redes sociales</Text>
       </View>
     );
   }
@@ -29,8 +25,9 @@ export default class Registry extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: 'orange',
+    flex: .15,
+    backgroundColor: 'green',
     justifyContent:'center',
+    alignItems:'center',
   },
 });

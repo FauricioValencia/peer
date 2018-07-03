@@ -18,8 +18,8 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 
 export default class RegistryComponent extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       user: '',
       email: '',
