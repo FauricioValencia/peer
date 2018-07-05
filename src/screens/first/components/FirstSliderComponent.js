@@ -16,7 +16,7 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { NavigationActions } from 'react-navigation'
-
+import Example from '../../carrusel';
 
 
 let props2;
@@ -37,7 +37,7 @@ export default class FirstSliderComponent extends Component {
   render() {
     return (
       <View style={styles.container}>
-          <Text>BIENVENIDO SLIDER</Text>
+      <Example/>
       </View>
     );
   }
@@ -45,8 +45,8 @@ export default class FirstSliderComponent extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: .6,
-    backgroundColor: 'gray',
+    flex: .9,
+    backgroundColor: '#191819',
     justifyContent:'center',
     alignItems:'center',
    

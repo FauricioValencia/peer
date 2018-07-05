@@ -35,7 +35,8 @@ const styles = StyleSheet.create({
   containerTitulo: {
     flex: .1,
     textAlign: 'center',
-    backgroundColor:'red',
+    // backgroundColor:'red',
+    // backgroundColor:'#ffa015',
     justifyContent:'center',
     alignItems: 'center',
 

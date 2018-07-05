@@ -43,17 +43,21 @@ export default class RegistryComponent extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'green',
+    // backgroundColor: 'green',
     justifyContent:'center',
     alignItems: 'center',
   },
   button:{
     width:'80%',
     height:'90%',
-    backgroundColor:'blue',
+    backgroundColor:'#191819',
     justifyContent:'center',
     alignItems: 'center',
-    marginTop: 40,
+    marginTop: 20,
+    marginBottom: 20,
+    borderRadius:10,
+    borderWidth:2,
+    borderColor:'white'
 
   },
   texto:{

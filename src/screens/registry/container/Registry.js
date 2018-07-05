@@ -30,7 +30,7 @@ export default class Registry extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'orange',
+    backgroundColor: '#ff7610',
     justifyContent:'center',
     alignItems: 'center',
   },

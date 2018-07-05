@@ -34,17 +34,17 @@ export default class Inputs extends Component {
       <View style={styles.container}>
         <TextInput
           style={styles.inputs}
-          onChangeText={(email) => this.setState({ email })}
-          value={this.state.email}
+          // onChangeText={(email) => this.setState({ email })}
+          // value={this.state.email}
           placeholder="Usuario"
           placeholderTextColor='gray'
-          keyboardType="email-address"
+          // keyboardType="email-address"
           selectionColor='black'
         />
         <TextInput
           style={styles.inputs}
-          onChangeText={(pass) => this.setState({ pass })}
-          value={this.state.pass}
+          // onChangeText={(pass) => this.setState({ pass })}
+          // value={this.state.pass}
           placeholder="Correo"
           placeholderTextColor='gray'
           secureTextEntry={true}
@@ -52,8 +52,8 @@ export default class Inputs extends Component {
         />
         <TextInput
           style={styles.inputs}
-          onChangeText={(email) => this.setState({ email })}
-          value={this.state.email}
+          // onChangeText={(email) => this.setState({ email })}
+          // value={this.state.email}
           placeholder="Contraseña"
           placeholderTextColor='gray'
           keyboardType="email-address"
@@ -61,8 +61,8 @@ export default class Inputs extends Component {
         />
         <TextInput
           style={styles.inputs}
-          onChangeText={(pass) => this.setState({ pass })}
-          value={this.state.pass}
+          // onChangeText={(pass) => this.setState({ pass })}
+          // value={this.state.pass}
           placeholder="Repetir contraseña"
           placeholderTextColor='gray'
           secureTextEntry={true}
@@ -75,7 +75,7 @@ export default class Inputs extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: .7,
-    backgroundColor: 'yellow',
+    // backgroundColor: 'yellow',
     alignItems: 'center',
   },
   inputs:{
