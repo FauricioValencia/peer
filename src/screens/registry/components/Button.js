@@ -19,28 +19,22 @@ import Icon from 'react-native-vector-icons/Ionicons';
 //componentes
 import TitleRegistry from '../components/TitleRegistry';
 import Inputs from '../components/Inputs';
-import Button from '../components/Button';
 
 
 export default class RegistryComponent extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      user: '',
-      email: '',
-      pass: '',
-      repass: ''
-    }
+    
   }
   render() {
     return (
       <View style={styles.container}>
-        <ScrollView>
-          
-          <TitleRegistry/>
-          <Inputs/>
-          <Button/>
-        </ScrollView>
+        <TouchableOpacity 
+        style={styles.button}>
+          <Text style={styles.texto}>
+            REGISTRAR
+          </Text>
+        </TouchableOpacity>
       </View>
     );
   }
@@ -48,8 +42,21 @@ export default class RegistryComponent extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    width: '90%',
-    height: '75%',
-    backgroundColor: 'gray',
+    flex: 1,
+    backgroundColor: 'green',
+    justifyContent:'center',
+    alignItems: 'center',
   },
+  button:{
+    width:'80%',
+    height:'90%',
+    backgroundColor:'blue',
+    justifyContent:'center',
+    alignItems: 'center',
+    marginTop: 40,
+
+  },
+  texto:{
+    color:'white',
+  }
 });

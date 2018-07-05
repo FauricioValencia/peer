@@ -10,7 +10,7 @@ import {
   View,
   TouchableOpacity
 } from 'react-native';
-import {resetNavigation} from '../../splash/Splash'
+import { resetNavigation } from '../../splash/Splash'
 export default class FirstOptions extends Component {
   constructor(props) {
     super(props);
@@ -20,7 +20,7 @@ export default class FirstOptions extends Component {
       <View style={styles.container}>
         <TouchableOpacity
           style={styles.fondoBoton}
-        onPress={()=>resetNavigation('Login')}
+          onPress={() => resetNavigation('Login')}
         >
           <Text
             style={{ color: 'white' }}
@@ -29,8 +29,8 @@ export default class FirstOptions extends Component {
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.fondoBoton}
-          onPress={()=>resetNavigation('Registry')}
-          >
+          onPress={() => resetNavigation('Registry')}
+        >
           <Text
             style={{ color: 'white' }}>Registrate
           </Text>

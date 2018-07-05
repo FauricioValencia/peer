@@ -15,40 +15,34 @@ import {
   TouchableOpacity
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { NavigationActions } from 'react-navigation'
 
 
-
-let props2;
-
-export default class FirstSliderComponent extends Component {
+export default class TitleRegistry extends Component {
   constructor(props) {
     super(props);
-    props2 = props
   }
-  onHandleLogin = () => {
-      resetNavigation('Login');
-  }
-  onHandleRegistry = () => {
-      resetNavigation('Registry');
-  }
-//optimizar el metodo
-
   render() {
     return (
-      <View style={styles.container}>
-          <Text>BIENVENIDO SLIDER</Text>
+        <View style={styles.containerTitulo}>
+          <Text style={styles.tituloTexto}>REGISTRO</Text>
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: .6,
-    backgroundColor: 'gray',
+  
+  containerTitulo: {
+    flex: .1,
+    textAlign: 'center',
+    backgroundColor:'red',
     justifyContent:'center',
-    alignItems:'center',
-   
+    alignItems: 'center',
+
+  },
+  tituloTexto: {
+    color: 'white',
+    fontSize: 20,
+    marginTop:20
   },
 });
